@@ -1,0 +1,11 @@
+propel:
+  bc_bicycles:
+    id: ~
+    name: { type: varchar(255), required: true }
+    year: { type: timestamp }
+    frame: { type: float }
+    speeds: { type: integer }
+    brakes: { type: varchar(255) }
+    application: { type: varchar(255) }
+    created_at: ~
+    updated_at: ~

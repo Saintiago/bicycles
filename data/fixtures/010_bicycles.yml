@@ -1,0 +1,24 @@
+BcBicycles:
+  bc_stels_pilot:
+    name: STELS Pilot 710 24 (2015)
+    year: 1420070400
+    frame: 13.5
+    speeds: 21
+    brakes: Ободные
+    application: Городской
+    
+  bc_merida_matts:
+    name: Merida Matts 6. 40-D (2015)
+    year: 1420070400
+    frame: 17
+    speeds: 24
+    brakes: Дисковые
+    application: Кросс-кантри
+    
+  bc_trek_3700:
+    name: TREK 3700 Disc (2014)
+    year: 1388534400
+    frame: 20
+    speeds: 27
+    brakes: Дисковые
+    application: Кросс-кантри
