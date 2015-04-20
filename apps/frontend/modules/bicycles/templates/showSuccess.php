@@ -1,3 +1,5 @@
+<?php slot('title', $BcBicycles->getName()) ?>
+
 <table>
   <tbody>
     <tr>

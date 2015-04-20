@@ -17,5 +17,5 @@
  * @package    lib.model
  */
 class BcBicycles extends BaseBcBicycles {
-
+    
 } // BcBicycles

@@ -1,16 +1,24 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+bicycles:
+  class:   sfPropelRouteCollection
+  options: { model: BcBicycles }
+
+job_show_bicycle:
+  url:   /bicycles/:id/
+  param: { module: bicycles, action: show }
+
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: bicycles, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
-
-default:
-  url:   /:module/:action/*
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+#
+#default:
+#  url:   /:module/:action/*
