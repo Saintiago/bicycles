@@ -11,16 +11,16 @@ class bicyclesActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
-      
-         $this->pager = new sfPropelPager(
+        $this->pager = new sfPropelPager(
             'BcBicycles',
             sfConfig::get('app_max_bicycles_on_page')
         );
+        
         $this->pager->setPage($request->getParameter('page', 1));
-        $this->pager->init();      
-      
+        $this->pager->init();
+        
         $this->curSort = $request->getParameter("sort");
-        $this->BcBicycless = BcBicyclesPeer::getSortedBicycles($this->curSort);
+        //$this->BcBicycless = BcBicyclesPeer::getSortedBicycles($this->curSort);      
     }
 
   public function executeShow(sfWebRequest $request)

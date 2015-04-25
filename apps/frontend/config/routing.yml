@@ -3,11 +3,8 @@
 
 bicycles:
   class:   sfPropelRouteCollection
-  options: { model: BcBicycles }
-
-job_show_bicycle:
-  url:   /bicycles/:id/
-  param: { module: bicycles, action: show }
+  options: { model: BcBicycles, type: list }
+  param: { module: bicycles, action: index }
 
 # default rules
 homepage:

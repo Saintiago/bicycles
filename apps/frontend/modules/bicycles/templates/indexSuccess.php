@@ -6,7 +6,7 @@
     </tr>
   </thead>
   <tbody>
-    <?php foreach ($BcBicycless as $BcBicycles): ?>
+    <?php foreach ($pager->getResults() as $BcBicycles): ?>
     <tr>
       <td><a href="<?php echo url_for('bicycles/show?id='.$BcBicycles->getId()) ?>"><?php echo $BcBicycles->getName() ?></a></td>
       <td><a href="<?php echo url_for('bicycles/edit?id='.$BcBicycles->getId()) ?>">Edit</a></td>
@@ -15,5 +15,25 @@
     <?php endforeach; ?>
   </tbody>
 </table>
+
+<?php if ($pager->haveToPaginate()): ?>
+
+<div class="pagination">
+  <ul>
+    <li><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $pager->getPreviousPage() ?>">Prev</a></li>
+    
+    <?php foreach ($pager->getLinks() as $page): ?>
+      <?php if ($page == $pager->getPage()): ?>
+        <li class="active"><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $page ?>"><?php echo $page ?></a></li>
+      <?php else: ?>
+        <li><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $page ?>"><?php echo $page ?></a></li>
+      <?php endif; ?>
+    <?php endforeach; ?>
+    
+    <li><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $pager->getNextPage() ?>">Next</a></li>
+  </ul>
+</div>
+
+<?php endif; ?>
 
 <a href="<?php echo url_for('bicycles/new') ?>">Add bicycle</a>
