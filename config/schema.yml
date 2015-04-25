@@ -2,7 +2,7 @@ propel:
   bc_bicycles:
     id: ~
     name: { type: varchar(255), required: true }
-    year: { type: timestamp }
+    year: { type: integer }
     frame: { type: float }
     speeds: { type: integer }
     brakes: { type: varchar(255) }

@@ -3,4 +3,4 @@
 
 # default values
 all:
-  max_bicycles:          1
+  max_bicycles_on_page: 2

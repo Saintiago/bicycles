@@ -1,0 +1,11 @@
+BcBicycles:
+<?php for ($i = 100; $i <= 130; $i++): ?>
+  bc_merida_matts_<?php echo $i?>:
+    name: Merida Matts _<?php echo $i . "\n"?>
+    year: <?php echo (2014 + $i) . "\n"?>
+    frame: 17
+    speeds: 24
+    brakes: Дисковые
+    application: Кросс-кантри
+ 
+<?php endfor ?>

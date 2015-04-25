@@ -14,7 +14,7 @@ CREATE TABLE `bc_bicycles`
 (
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(255)  NOT NULL,
-	`year` DATETIME,
+	`year` INTEGER,
 	`frame` FLOAT,
 	`speeds` INTEGER,
 	`brakes` VARCHAR(255),

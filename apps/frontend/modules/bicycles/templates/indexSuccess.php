@@ -1,7 +1,7 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th><a href="?sort=<?=($curSort == "desc") ? "asc" : "desc"?>" title="Сортировать по <?=($curSort == "desc") ? "возрастанию" : "убыванию"?>">Title</a></th>
       <th colspan="2">Actions</th>
     </tr>
   </thead>
