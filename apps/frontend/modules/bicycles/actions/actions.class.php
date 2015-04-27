@@ -16,11 +16,25 @@ class bicyclesActions extends sfActions
             sfConfig::get('app_max_bicycles_on_page')
         );
         
+        $this->curSort = $request->getParameter("sort");
+        $this->sortParam = "";
+        if ($this->curSort == "asc")
+        {
+            $this->sortParam = "&sort=" . $this->curSort;
+        }
+        
+        $criteria = new Criteria();
+        if ( $this->curSort == "asc")
+        {
+            $criteria->addAscendingOrderByColumn(BcBicyclesPeer::NAME);
+        }
+        else
+        {
+            $criteria->addDescendingOrderByColumn(BcBicyclesPeer::NAME);
+        }
+        $this->pager->setCriteria($criteria);
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
-        
-        $this->curSort = $request->getParameter("sort");
-        //$this->BcBicycless = BcBicyclesPeer::getSortedBicycles($this->curSort);      
     }
 
   public function executeShow(sfWebRequest $request)

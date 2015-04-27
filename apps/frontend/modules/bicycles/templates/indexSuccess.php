@@ -1,7 +1,8 @@
 <table>
   <thead>
     <tr>
-      <th><a href="?sort=<?=($curSort == "desc") ? "asc" : "desc"?>" title="Сортировать по <?=($curSort == "desc") ? "возрастанию" : "убыванию"?>">Title</a></th>
+      <th>
+          <a href="<?php echo url_for('bicycles/index?sort=') ?><?=($curSort == "asc") ? "desc" : "asc"?><?=($pager->getPage() > 1) ? "&page=" . $pager->getPage() : "" ?>" title="Сортировать по <?=($curSort == "desc") ? "возрастанию" : "убыванию"?>">Title</a></th>
       <th colspan="2">Actions</th>
     </tr>
   </thead>
@@ -20,17 +21,17 @@
 
 <div class="pagination">
   <ul>
-    <li><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $pager->getPreviousPage() ?>">Prev</a></li>
+    <li><a href="<?php echo url_for('bicycles/index?page=', $BcBicycles) . $pager->getPreviousPage() . $sortParam ?>">Prev</a></li>
     
     <?php foreach ($pager->getLinks() as $page): ?>
       <?php if ($page == $pager->getPage()): ?>
-        <li class="active"><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $page ?>"><?php echo $page ?></a></li>
+        <li class="active"><a href="<?php echo url_for('bicycles/index?page=', $BcBicycles) . $page . $sortParam ?>"><?php echo $page ?></a></li>
       <?php else: ?>
-        <li><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $page ?>"><?php echo $page ?></a></li>
+        <li><a href="<?php echo url_for('bicycles/index?page=', $BcBicycles) . $page . $sortParam ?>"><?php echo $page ?></a></li>
       <?php endif; ?>
     <?php endforeach; ?>
     
-    <li><a href="<?php echo url_for('bicycles', $BcBicycles) ?>page=<?php echo $pager->getNextPage() ?>">Next</a></li>
+    <li><a href="<?php echo url_for('bicycles/index?page=', $BcBicycles) . $pager->getNextPage() . $sortParam ?>">Next</a></li>
   </ul>
 </div>
 

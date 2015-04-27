@@ -18,18 +18,5 @@
  */
 class BcBicyclesPeer extends BaseBcBicyclesPeer 
 {
-    static public function getSortedBicycles($sort)
-    {
-        $criteria = new Criteria();
-        if ($sort == "asc")
-        {
-            $criteria->addAscendingOrderByColumn(self::NAME);
-        }
-        else
-        {
-            $criteria->addDescendingOrderByColumn(self::NAME);
-        }
-        
-        return self::doSelect($criteria);
-    }
+    
 } // BcBicyclesPeer

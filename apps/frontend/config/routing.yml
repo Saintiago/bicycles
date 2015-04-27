@@ -5,7 +5,7 @@ bicycles:
   class:   sfPropelRouteCollection
   options: { model: BcBicycles, type: list }
   param: { module: bicycles, action: index }
-
+  
 # default rules
 homepage:
   url:   /
