@@ -16,7 +16,7 @@ abstract class BaseBcBicyclesForm extends BaseFormPropel
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
       'name'        => new sfWidgetFormInputText(),
-      'year'        => new sfWidgetFormDateTime(),
+      'year'        => new sfWidgetFormInputText(),
       'frame'       => new sfWidgetFormInputText(),
       'speeds'      => new sfWidgetFormInputText(),
       'brakes'      => new sfWidgetFormInputText(),
@@ -28,7 +28,7 @@ abstract class BaseBcBicyclesForm extends BaseFormPropel
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
       'name'        => new sfValidatorString(array('max_length' => 255)),
-      'year'        => new sfValidatorDateTime(array('required' => false)),
+      'year'        => new sfValidatorNumber(array('required' => false)),
       'frame'       => new sfValidatorNumber(array('required' => false)),
       'speeds'      => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'brakes'      => new sfValidatorString(array('max_length' => 255, 'required' => false)),
