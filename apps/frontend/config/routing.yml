@@ -6,6 +6,11 @@ bicycles:
   options: { model: BcBicycles, type: list }
   param: { module: bicycles, action: index }
   
+bicycles_search:
+  url: /bicycles/search
+  options: { model: BcBicycles, type: list }
+  param: { module: bicycles, action: search }
+  
 # default rules
 homepage:
   url:   /

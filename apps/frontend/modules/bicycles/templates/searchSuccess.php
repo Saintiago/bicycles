@@ -1,14 +1,14 @@
 <form action="<?php echo url_for('bicycles/search') ?>" method="POST">
-  <div>
+<div>
     <?php echo $SearchForm ?>
     <input type="submit" name="go" value="Search" />
-  </div>
+</div>
 </form>
 <table>
   <thead>
     <tr>
       <th>
-          <a href="<?php echo url_for('bicycles/index?sort=') ?><?=($curSort == "asc") ? "desc" : "asc"?><?=($pager->getPage() > 1) ? "&page=" . $pager->getPage() : "" ?>" title="Сортировать по <?=($curSort == "desc") ? "возрастанию" : "убыванию"?>">Title</a></th>
+          <a href="<?php echo url_for('bicycles/index?sort=') ?><?=($curSort == "asc") ? "desc" : "asc" ?><?=($pager->getPage() > 1) ? "&page=" . $pager->getPage() : "" ?>" title="Сортировать по <?=($curSort == "desc") ? "возрастанию" : "убыванию" ?>">Title</a></th>
       <th colspan="2">Actions</th>
     </tr>
   </thead>
@@ -24,7 +24,6 @@
 </table>
 
 <?php if ($pager->haveToPaginate()): ?>
-
 <div class="pagination">
   <ul>
     <li><a href="<?php echo url_for('bicycles/index?page=', $BcBicycles) . $pager->getPreviousPage() . $sortParam ?>">Prev</a></li>
