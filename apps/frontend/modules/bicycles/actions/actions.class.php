@@ -12,7 +12,8 @@ class bicyclesActions extends sfActions
         $this->SearchForm = new SearchForm();
         $this->pager = new sfPropelPager('BcBicycles', sfConfig::get('app_max_bicycles_on_page'));
         $this->curSort = $request->getParameter("sort");
-        $this->sortParam = BcBicyclesPeer::GetSortParam($this->curSort);
+        $this->pageLinkParam = BcBicyclesPeer::GetLinkParam(array("sort" => $this->curSort));
+        $this->sortLinkParam = BcBicyclesPeer::GetLinkParam(array("page" => $request->getParameter('page')));
         
         $criteria = new Criteria;
         BcBicyclesPeer::AddSortCriteria($this->curSort, $criteria);
@@ -29,7 +30,8 @@ class bicyclesActions extends sfActions
         $this->SearchForm = new SearchForm();
         $this->SearchForm->setDefault("query", $this->SearchQuery);
         $this->pager = new sfPropelPager('BcBicycles', sfConfig::get('app_max_bicycles_on_page'));
-        $this->sortParam = BcBicyclesPeer::GetSortParam($this->curSort);
+        $this->pageLinkParam = BcBicyclesPeer::GetLinkParam(array("sort" => $this->curSort, "query" => $this->SearchQuery));
+        $this->sortLinkParam = BcBicyclesPeer::GetLinkParam(array("page" => $request->getParameter('page'), "query" => $this->SearchQuery));
         
         $criteria = new Criteria;
         BcBicyclesPeer::AddSortCriteria($this->curSort, $criteria);
@@ -38,6 +40,7 @@ class bicyclesActions extends sfActions
         $this->pager->setCriteria($criteria);
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
+        $this->setTemplate('index');
     }
 
     public function executeShow(sfWebRequest $request)

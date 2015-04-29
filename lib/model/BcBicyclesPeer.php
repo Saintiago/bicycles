@@ -22,33 +22,40 @@
             if ($curSort == "asc")
             {
                 $criteria->addAscendingOrderByColumn(self::NAME);
-            } else
+            }
+            else
             {
                 $criteria->addDescendingOrderByColumn(self::NAME);
             }
         }
-        
+
         public static function AddSearchCriteria($SearchQuery, &$criteria)
         {
             $query = '%' . $SearchQuery . '%';
-        
+
             $name = $criteria->getNewCriterion(BcBicyclesPeer::NAME, $query, Criteria::LIKE);
             $year = $criteria->getNewCriterion(BcBicyclesPeer::YEAR, $query, Criteria::LIKE);
             $frame = $criteria->getNewCriterion(BcBicyclesPeer::FRAME, $query, Criteria::LIKE);
             $speeds = $criteria->getNewCriterion(BcBicyclesPeer::SPEEDS, $query, Criteria::LIKE);
             $brakes = $criteria->getNewCriterion(BcBicyclesPeer::BRAKES, $query, Criteria::LIKE);
             $application = $criteria->getNewCriterion(BcBicyclesPeer::APPLICATION, $query, Criteria::LIKE);
-            
+
             $criteria->add($application->addOr($brakes)->addOr($speeds)->addOr($frame)->addOr($year)->addOr($name));
         }
-        
-        public static function GetSortParam($curSort)
+
+        public static function GetLinkParam($arParams)
         {
-            $sortParam = "";
-            if ($curSort == "asc")
+            $linkParam = "";
+
+            foreach ($arParams as $key => $value)
             {
-                $sortParam = "&sort=" . $curSort;
+                if (strlen($value) > 0)
+                {
+                    $linkParam .= "&" . $key . "=" . $value;
+                }
             }
-            return $sortParam;
+            
+            return $linkParam;
         }
+
     } // BcBicyclesPeer

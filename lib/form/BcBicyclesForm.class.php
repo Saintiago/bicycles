@@ -10,8 +10,9 @@
     class BcBicyclesForm extends BaseBcBicyclesForm
     {
         public function configure()
-        {
-        }
+          {
+            $this->useFields(array('name', 'year', 'frame', 'speeds', 'brakes', 'application'));
+          }
 
     }
     
