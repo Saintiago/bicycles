@@ -9168,3 +9168,534 @@ Apr 29 13:10:01 symfony [info] {main} Get slot "title"
 Apr 29 13:10:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
 Apr 29 13:10:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
 Apr 29 13:10:01 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 11:56:00 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:56:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:56:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:56:00 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:56:00 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:56:00 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:56:00 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:56:00 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:56:00 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:00 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:00 symfony [info] {main} Get slot "title"
+May 01 11:56:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:56:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:56:00 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 11:56:03 symfony [info] {sfPatternRouting} Match route "bicycles_show" (/bicycles/:id.:sf_format) for /bicycles/68 with parameters array (  'module' => 'bicycles',  'action' => 'show',  'sf_format' => 'html',  'id' => '68',)
+May 01 11:56:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:56:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:56:03 symfony [info] {bicyclesActions} Call "bicyclesActions->executeShow()"
+May 01 11:56:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:56:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE bc_bicycles.ID='68'
+May 01 11:56:03 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/showSuccess.php"
+May 01 11:56:03 symfony [info] {main} Set slot "title"
+May 01 11:56:03 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:03 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:03 symfony [info] {main} Get slot "title"
+May 01 11:56:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:56:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:56:03 symfony [info] {sfWebResponse} Send content (2208 o)
+May 01 11:56:04 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:56:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:56:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:56:04 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:56:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:56:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:56:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:56:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:56:05 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:05 symfony [info] {main} Get slot "title"
+May 01 11:56:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:56:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:56:05 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 11:56:06 symfony [info] {sfPatternRouting} Match route "bicycles_show" (/bicycles/:id.:sf_format) for /bicycles/66 with parameters array (  'module' => 'bicycles',  'action' => 'show',  'sf_format' => 'html',  'id' => '66',)
+May 01 11:56:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:56:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:56:06 symfony [info] {bicyclesActions} Call "bicyclesActions->executeShow()"
+May 01 11:56:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:56:06 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE bc_bicycles.ID='66'
+May 01 11:56:06 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/showSuccess.php"
+May 01 11:56:06 symfony [info] {main} Set slot "title"
+May 01 11:56:06 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:06 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:06 symfony [info] {main} Get slot "title"
+May 01 11:56:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:56:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:56:06 symfony [info] {sfWebResponse} Send content (2208 o)
+May 01 11:56:10 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:56:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:56:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:56:10 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:56:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:56:10 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:56:10 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:56:10 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:56:10 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:10 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:10 symfony [info] {main} Get slot "title"
+May 01 11:56:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:56:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:56:10 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 11:56:12 symfony [info] {sfPatternRouting} Match route "bicycles_edit" (/bicycles/:id/edit.:sf_format) for /bicycles/68/edit with parameters array (  'module' => 'bicycles',  'action' => 'edit',  'sf_format' => 'html',  'id' => '68',)
+May 01 11:56:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:56:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:56:12 symfony [info] {bicyclesActions} Call "bicyclesActions->executeEdit()"
+May 01 11:56:12 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:56:12 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE bc_bicycles.ID='68'
+May 01 11:56:12 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/editSuccess.php"
+May 01 11:56:12 symfony [info] {sfPartialView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/_form.php"
+May 01 11:56:12 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:12 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:12 symfony [info] {main} Get slot "title"
+May 01 11:56:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:56:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:56:12 symfony [info] {sfWebResponse} Send content (3835 o)
+May 01 11:56:14 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:56:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:56:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:56:14 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:56:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:56:14 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:56:14 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:56:14 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:56:14 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:14 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:56:14 symfony [info] {main} Get slot "title"
+May 01 11:56:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:56:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:56:14 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 11:57:02 symfony [info] {sfPatternRouting} Match route "bicycles_show" (/bicycles/:id.:sf_format) for /bicycles/70 with parameters array (  'module' => 'bicycles',  'action' => 'show',  'sf_format' => 'html',  'id' => '70',)
+May 01 11:57:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:02 symfony [info] {bicyclesActions} Call "bicyclesActions->executeShow()"
+May 01 11:57:02 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:02 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE bc_bicycles.ID='70'
+May 01 11:57:02 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/showSuccess.php"
+May 01 11:57:02 symfony [info] {main} Set slot "title"
+May 01 11:57:02 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:02 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:02 symfony [info] {main} Get slot "title"
+May 01 11:57:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:02 symfony [info] {sfWebResponse} Send content (2222 o)
+May 01 11:57:35 symfony [info] {sfPatternRouting} Match route "bicycles_edit" (/bicycles/:id/edit.:sf_format) for /bicycles/70/edit with parameters array (  'module' => 'bicycles',  'action' => 'edit',  'sf_format' => 'html',  'id' => '70',)
+May 01 11:57:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:35 symfony [info] {bicyclesActions} Call "bicyclesActions->executeEdit()"
+May 01 11:57:35 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:35 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE bc_bicycles.ID='70'
+May 01 11:57:35 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/editSuccess.php"
+May 01 11:57:35 symfony [info] {sfPartialView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/_form.php"
+May 01 11:57:35 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:35 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:35 symfony [info] {main} Get slot "title"
+May 01 11:57:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:35 symfony [info] {sfWebResponse} Send content (3835 o)
+May 01 11:57:38 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:57:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:38 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:57:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:57:38 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:57:38 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:57:38 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:38 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:38 symfony [info] {main} Get slot "title"
+May 01 11:57:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:38 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 11:57:43 symfony [info] {sfPatternRouting} Match route "bicycles_delete" (/bicycles/:id.:sf_format) for /bicycles/67 with parameters array (  'module' => 'bicycles',  'action' => 'delete',  'sf_format' => 'html',  'id' => '67',)
+May 01 11:57:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:43 symfony [info] {bicyclesActions} Call "bicyclesActions->executeDelete()"
+May 01 11:57:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE bc_bicycles.ID='67'
+May 01 11:57:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | DELETE FROM bc_bicycles WHERE bc_bicycles.ID=67
+May 01 11:57:43 symfony [info] {sfFrontWebController} Redirect to "http://bicycles.local/frontend_dev.php/bicycles"
+May 01 11:57:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 01 11:57:43 symfony [info] {sfWebResponse} Send header "Location: http://bicycles.local/frontend_dev.php/bicycles"
+May 01 11:57:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:43 symfony [info] {sfWebResponse} Send content (118 o)
+May 01 11:57:43 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:57:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:43 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:57:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:57:43 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:57:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:57:43 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:43 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:43 symfony [info] {main} Get slot "title"
+May 01 11:57:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:43 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 11:57:47 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:57:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:47 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:57:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:57:47 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:57:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 20, 10
+May 01 11:57:47 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:47 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:47 symfony [info] {main} Get slot "title"
+May 01 11:57:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:47 symfony [info] {sfWebResponse} Send content (11942 o)
+May 01 11:57:48 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:57:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:48 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:57:48 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:48 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:57:48 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:57:48 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10, 10
+May 01 11:57:48 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:48 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:48 symfony [info] {main} Get slot "title"
+May 01 11:57:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:48 symfony [info] {sfWebResponse} Send content (11942 o)
+May 01 11:57:49 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:57:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:49 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:57:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:57:49 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:57:49 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 20, 10
+May 01 11:57:49 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:49 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:49 symfony [info] {main} Get slot "title"
+May 01 11:57:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:49 symfony [info] {sfWebResponse} Send content (11942 o)
+May 01 11:57:50 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:57:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:50 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:57:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:57:51 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:57:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:57:51 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:51 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:51 symfony [info] {main} Get slot "title"
+May 01 11:57:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:51 symfony [info] {sfWebResponse} Send content (11954 o)
+May 01 11:57:51 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 11:57:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:57:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:57:51 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 11:57:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:57:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 11:57:51 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 11:57:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 11:57:51 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:51 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:57:51 symfony [info] {main} Get slot "title"
+May 01 11:57:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:57:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:57:51 symfony [info] {sfWebResponse} Send content (11954 o)
+May 01 11:59:23 symfony [info] {sfPatternRouting} Match route "bicycles_new" (/bicycles/new.:sf_format) for /bicycles/new with parameters array (  'module' => 'bicycles',  'action' => 'new',  'sf_format' => 'html',)
+May 01 11:59:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:59:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:59:23 symfony [info] {bicyclesActions} Call "bicyclesActions->executeNew()"
+May 01 11:59:23 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/newSuccess.php"
+May 01 11:59:23 symfony [info] {sfPartialView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/_form.php"
+May 01 11:59:23 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:59:23 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:59:23 symfony [info] {main} Get slot "title"
+May 01 11:59:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:59:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:59:23 symfony [info] {sfWebResponse} Send content (2969 o)
+May 01 11:59:56 symfony [info] {sfPatternRouting} Match route "bicycles_create" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'create',  'sf_format' => 'html',)
+May 01 11:59:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:59:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:59:56 symfony [info] {bicyclesActions} Call "bicyclesActions->executeCreate()"
+May 01 11:59:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:59:57 symfony [debug] {sfPropelLogger} time:  0.037 sec | slow:  NO | mem:    7.3 MB | mempeak:    7.3 MB | memdelta:      0.0 B | INSERT INTO bc_bicycles (`ID`,`NAME`,`YEAR`,`FRAME`,`SPEEDS`,`BRAKES`,`APPLICATION`,`CREATED_AT`,`UPDATED_AT`) VALUES (NULL,'<b>Html Injection</b>',2010,20,17,'Ободные','Городской','2015-05-01 11:59:57','2015-05-01 11:59:56')
+May 01 11:59:57 symfony [info] {sfFrontWebController} Redirect to "http://bicycles.local/frontend_dev.php/bicycles/71/edit"
+May 01 11:59:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 01 11:59:57 symfony [info] {sfWebResponse} Send header "Location: http://bicycles.local/frontend_dev.php/bicycles/71/edit"
+May 01 11:59:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:59:57 symfony [info] {sfWebResponse} Send content (126 o)
+May 01 11:59:57 symfony [info] {sfPatternRouting} Match route "bicycles_edit" (/bicycles/:id/edit.:sf_format) for /bicycles/71/edit with parameters array (  'module' => 'bicycles',  'action' => 'edit',  'sf_format' => 'html',  'id' => '71',)
+May 01 11:59:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 11:59:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 11:59:57 symfony [info] {bicyclesActions} Call "bicyclesActions->executeEdit()"
+May 01 11:59:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 11:59:57 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE bc_bicycles.ID='71'
+May 01 11:59:57 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/editSuccess.php"
+May 01 11:59:57 symfony [info] {sfPartialView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/_form.php"
+May 01 11:59:57 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:59:57 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 11:59:57 symfony [info] {main} Get slot "title"
+May 01 11:59:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 11:59:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 11:59:57 symfony [info] {sfWebResponse} Send content (3844 o)
+May 01 12:00:01 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:00:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:00:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:00:01 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:00:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:00:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:00:01 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:00:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:00:01 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:01 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:01 symfony [info] {main} Get slot "title"
+May 01 12:00:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:00:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:00:01 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 12:00:03 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:00:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:00:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:00:04 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:00:04 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:00:04 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:00:04 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:00:04 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10, 10
+May 01 12:00:04 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:04 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:04 symfony [info] {main} Get slot "title"
+May 01 12:00:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:00:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:00:04 symfony [info] {sfWebResponse} Send content (11942 o)
+May 01 12:00:04 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:00:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:00:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:00:04 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:00:04 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:00:04 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:00:04 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:00:04 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 20, 10
+May 01 12:00:04 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:05 symfony [info] {main} Get slot "title"
+May 01 12:00:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:00:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:00:05 symfony [info] {sfWebResponse} Send content (11942 o)
+May 01 12:00:05 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:00:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:00:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:00:05 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:00:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:00:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:00:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:00:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 30, 10
+May 01 12:00:05 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:05 symfony [info] {main} Get slot "title"
+May 01 12:00:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:00:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:00:05 symfony [info] {sfWebResponse} Send content (6034 o)
+May 01 12:00:46 symfony [info] {sfPatternRouting} Match route "bicycles_new" (/bicycles/new.:sf_format) for /bicycles/new with parameters array (  'module' => 'bicycles',  'action' => 'new',  'sf_format' => 'html',)
+May 01 12:00:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:00:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:00:46 symfony [info] {bicyclesActions} Call "bicyclesActions->executeNew()"
+May 01 12:00:46 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/newSuccess.php"
+May 01 12:00:46 symfony [info] {sfPartialView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/_form.php"
+May 01 12:00:46 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:46 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:46 symfony [info] {main} Get slot "title"
+May 01 12:00:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:00:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:00:46 symfony [info] {sfWebResponse} Send content (2969 o)
+May 01 12:00:53 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:00:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:00:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:00:53 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:00:53 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:00:53 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:00:53 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:00:53 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:00:53 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:53 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:00:53 symfony [info] {main} Get slot "title"
+May 01 12:00:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:00:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:00:53 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 12:02:29 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:02:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:02:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:02:29 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:02:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:02:29 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%' OR bc_bicycles.BRAKES LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.SPEEDS LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.FRAME LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.YEAR LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.NAME LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%')
+May 01 12:02:29 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:02:29 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:02:29 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%' OR bc_bicycles.BRAKES LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.SPEEDS LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.FRAME LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.YEAR LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') OR bc_bicycles.NAME LIKE '%as%\'; DROP TABLE \'bc\'; SELECT * FROM \'bc\' WHERE id LIKE \'sdf%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:02:29 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:02:29 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:02:29 symfony [info] {main} Get slot "title"
+May 01 12:02:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:02:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:02:29 symfony [info] {sfWebResponse} Send content (2736 o)
+May 01 12:02:37 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:02:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:02:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:02:37 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:02:37 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:02:37 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:02:37 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:02:37 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:02:37 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:02:37 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:02:37 symfony [info] {main} Get slot "title"
+May 01 12:02:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:02:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:02:37 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 12:05:12 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:05:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:05:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:05:12 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:05:12 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:05:12 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:05:12 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:05:12 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:05:12 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:05:12 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:05:12 symfony [info] {main} Get slot "title"
+May 01 12:05:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:05:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:05:12 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 12:07:16 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:07:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:07:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:07:16 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:07:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:07:16 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:07:16 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:07:16 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:07:16 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:07:16 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:07:16 symfony [info] {main} Get slot "title"
+May 01 12:07:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:07:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:07:16 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 12:07:45 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:07:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:07:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:07:45 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:07:45 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:07:45 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%TESTING%' OR bc_bicycles.BRAKES LIKE '%TESTING%') OR bc_bicycles.SPEEDS LIKE '%TESTING%') OR bc_bicycles.FRAME LIKE '%TESTING%') OR bc_bicycles.YEAR LIKE '%TESTING%') OR bc_bicycles.NAME LIKE '%TESTING%')
+May 01 12:07:45 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:07:45 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:07:45 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%TESTING%' OR bc_bicycles.BRAKES LIKE '%TESTING%') OR bc_bicycles.SPEEDS LIKE '%TESTING%') OR bc_bicycles.FRAME LIKE '%TESTING%') OR bc_bicycles.YEAR LIKE '%TESTING%') OR bc_bicycles.NAME LIKE '%TESTING%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:07:45 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:07:45 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:07:45 symfony [info] {main} Get slot "title"
+May 01 12:07:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:07:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:07:45 symfony [info] {sfWebResponse} Send content (2570 o)
+May 01 12:11:05 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:11:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:11:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:11:05 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:11:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:11:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%' OR bc_bicycles.BRAKES LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.SPEEDS LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.FRAME LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.YEAR LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.NAME LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%')
+May 01 12:11:05 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:11:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:11:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%' OR bc_bicycles.BRAKES LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.SPEEDS LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.FRAME LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.YEAR LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') OR bc_bicycles.NAME LIKE '%\');DROP TABLE `bc_bicycles`;SELECT COUNT(*) FROM `bc_bicycles` WHERE (bc_bicycles.APPLICATION LIKE \'%TESTING%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:11:05 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:11:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:11:05 symfony [info] {main} Get slot "title"
+May 01 12:11:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:11:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:11:05 symfony [info] {sfWebResponse} Send content (2792 o)
+May 01 12:11:53 symfony [info] {sfPatternRouting} Match route "bicycles" (/bicycles.:sf_format) for /bicycles with parameters array (  'module' => 'bicycles',  'action' => 'index',  'sf_format' => 'html',)
+May 01 12:11:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:11:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:11:53 symfony [info] {bicyclesActions} Call "bicyclesActions->executeIndex()"
+May 01 12:11:53 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:11:53 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles`
+May 01 12:11:53 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:11:53 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:11:53 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:11:53 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:11:53 symfony [info] {main} Get slot "title"
+May 01 12:11:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:11:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:11:53 symfony [info] {sfWebResponse} Send content (11943 o)
+May 01 12:12:07 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:12:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:12:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:12:07 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:12:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:12:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%\'\'\';;;%' OR bc_bicycles.BRAKES LIKE '%\'\'\';;;%') OR bc_bicycles.SPEEDS LIKE '%\'\'\';;;%') OR bc_bicycles.FRAME LIKE '%\'\'\';;;%') OR bc_bicycles.YEAR LIKE '%\'\'\';;;%') OR bc_bicycles.NAME LIKE '%\'\'\';;;%')
+May 01 12:12:07 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:12:07 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:12:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%\'\'\';;;%' OR bc_bicycles.BRAKES LIKE '%\'\'\';;;%') OR bc_bicycles.SPEEDS LIKE '%\'\'\';;;%') OR bc_bicycles.FRAME LIKE '%\'\'\';;;%') OR bc_bicycles.YEAR LIKE '%\'\'\';;;%') OR bc_bicycles.NAME LIKE '%\'\'\';;;%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:12:07 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:12:07 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:12:07 symfony [info] {main} Get slot "title"
+May 01 12:12:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:12:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:12:07 symfony [info] {sfWebResponse} Send content (2598 o)
+May 01 12:14:04 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:14:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:14:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:14:04 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:14:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:14:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%$username = 1\' or \'1\' = \'1%' OR bc_bicycles.BRAKES LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.SPEEDS LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.FRAME LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.YEAR LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.NAME LIKE '%$username = 1\' or \'1\' = \'1%')
+May 01 12:14:05 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:14:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:14:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%$username = 1\' or \'1\' = \'1%' OR bc_bicycles.BRAKES LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.SPEEDS LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.FRAME LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.YEAR LIKE '%$username = 1\' or \'1\' = \'1%') OR bc_bicycles.NAME LIKE '%$username = 1\' or \'1\' = \'1%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:14:05 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:14:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:14:05 symfony [info] {main} Get slot "title"
+May 01 12:14:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:14:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:14:05 symfony [info] {sfWebResponse} Send content (2648 o)
+May 01 12:15:05 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:15:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:15:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:15:05 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:15:05 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:15:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%A%' OR bc_bicycles.BRAKES LIKE '%A%') OR bc_bicycles.SPEEDS LIKE '%A%') OR bc_bicycles.FRAME LIKE '%A%') OR bc_bicycles.YEAR LIKE '%A%') OR bc_bicycles.NAME LIKE '%A%')
+May 01 12:15:05 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:15:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:15:05 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%A%' OR bc_bicycles.BRAKES LIKE '%A%') OR bc_bicycles.SPEEDS LIKE '%A%') OR bc_bicycles.FRAME LIKE '%A%') OR bc_bicycles.YEAR LIKE '%A%') OR bc_bicycles.NAME LIKE '%A%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:15:05 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:15:05 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:15:05 symfony [info] {main} Get slot "title"
+May 01 12:15:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:15:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:15:05 symfony [info] {sfWebResponse} Send content (11919 o)
+May 01 12:16:47 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:16:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:16:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:16:47 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:16:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:16:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%' OR bc_bicycles.BRAKES LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.SPEEDS LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.FRAME LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.YEAR LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.NAME LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%')
+May 01 12:16:47 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:16:47 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:16:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%' OR bc_bicycles.BRAKES LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.SPEEDS LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.FRAME LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.YEAR LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') OR bc_bicycles.NAME LIKE '%A%\' OR bc_bicycles.NAME LIKE *)%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:16:47 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:16:47 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:16:47 symfony [info] {main} Get slot "title"
+May 01 12:16:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:16:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:16:47 symfony [info] {sfWebResponse} Send content (2628 o)
+May 01 12:16:56 symfony [info] {sfPatternRouting} Match route "bicycles_search" (/bicycles/search) for /bicycles/search with parameters array (  'module' => 'bicycles',  'action' => 'search',)
+May 01 12:16:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 12:16:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 12:16:56 symfony [info] {bicyclesActions} Call "bicyclesActions->executeSearch()"
+May 01 12:16:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 01 12:16:56 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%;%' OR bc_bicycles.BRAKES LIKE '%;%') OR bc_bicycles.SPEEDS LIKE '%;%') OR bc_bicycles.FRAME LIKE '%;%') OR bc_bicycles.YEAR LIKE '%;%') OR bc_bicycles.NAME LIKE '%;%')
+May 01 12:16:56 symfony [info] {bicyclesActions} Change template to "CURRENT/index"
+May 01 12:16:56 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\modules/bicycles/templates/indexSuccess.php"
+May 01 12:16:56 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT bc_bicycles.ID, bc_bicycles.NAME, bc_bicycles.YEAR, bc_bicycles.FRAME, bc_bicycles.SPEEDS, bc_bicycles.BRAKES, bc_bicycles.APPLICATION, bc_bicycles.CREATED_AT, bc_bicycles.UPDATED_AT FROM `bc_bicycles` WHERE (((((bc_bicycles.APPLICATION LIKE '%;%' OR bc_bicycles.BRAKES LIKE '%;%') OR bc_bicycles.SPEEDS LIKE '%;%') OR bc_bicycles.FRAME LIKE '%;%') OR bc_bicycles.YEAR LIKE '%;%') OR bc_bicycles.NAME LIKE '%;%') ORDER BY bc_bicycles.NAME DESC LIMIT 10
+May 01 12:16:56 symfony [info] {sfPHPView} Decorate content with "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:16:56 symfony [info] {sfPHPView} Render "D:\my_projects\bicycles.local\apps\frontend\templates/layout.php"
+May 01 12:16:56 symfony [info] {main} Get slot "title"
+May 01 12:16:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 12:16:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 12:16:56 symfony [info] {sfWebResponse} Send content (2558 o)

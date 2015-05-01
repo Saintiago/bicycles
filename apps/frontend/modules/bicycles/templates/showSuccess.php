@@ -1,6 +1,6 @@
 <?php slot('title', $BcBicycles->getName()) ?>
 
-<table>
+<table class="table">
   <tbody>
     <tr>
       <th>Id:</th>
