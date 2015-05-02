@@ -9,7 +9,7 @@ class bicyclesActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
-        $this->SearchForm = new SearchForm();
+        $this->searchForm = new searchForm();
         $this->pager = new sfPropelPager('BcBicycles', sfConfig::get('app_max_bicycles_on_page'));
         $this->curSort = $request->getParameter("sort");
         $this->pageLinkParam = BcBicyclesPeer::GetLinkParam(array("sort" => $this->curSort));
@@ -26,16 +26,16 @@ class bicyclesActions extends sfActions
     public function executeSearch(sfWebRequest $request)
     {
         $this->curSort = $request->getParameter("sort");
-        $this->SearchQuery = $request->getParameter("query");
-        $this->SearchForm = new SearchForm();
-        $this->SearchForm->setDefault("query", $this->SearchQuery);
+        $this->searchQuery = $request->getParameter("query");
+        $this->searchForm = new searchForm();
+        $this->searchForm->setDefault("query", $this->searchQuery);
         $this->pager = new sfPropelPager('BcBicycles', sfConfig::get('app_max_bicycles_on_page'));
-        $this->pageLinkParam = BcBicyclesPeer::GetLinkParam(array("sort" => $this->curSort, "query" => $this->SearchQuery));
-        $this->sortLinkParam = BcBicyclesPeer::GetLinkParam(array("page" => $request->getParameter('page'), "query" => $this->SearchQuery));
+        $this->pageLinkParam = UrlUtil::GetLinkParam(array("sort" => $this->curSort, "query" => $this->searchQuery));
+        $this->sortLinkParam = UrlUtil::GetLinkParam(array("page" => $request->getParameter('page'), "query" => $this->searchQuery));
         
         $criteria = new Criteria;
         BcBicyclesPeer::AddSortCriteria($this->curSort, $criteria);
-        BcBicyclesPeer::AddSearchCriteria($this->SearchQuery, $criteria);
+        BcBicyclesPeer::AddSearchCriteria($this->searchQuery, $criteria);
         
         $this->pager->setCriteria($criteria);
         $this->pager->setPage($request->getParameter('page', 1));
