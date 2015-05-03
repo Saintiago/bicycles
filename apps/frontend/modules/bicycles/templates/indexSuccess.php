@@ -6,6 +6,7 @@
     }
     else
     {
+        $curSort = "desc";
         $sortLink .= "asc";
     }
     $sortLink .= $sortLinkParam;
@@ -33,7 +34,7 @@
       <thead>
         <tr>
           <th>
-              <a href="<?= $sortLink ?>" title="Сортировать по <?= $sortDirection ?>">Title</a>
+              <a href="<?= $sortLink ?>" class="sort_title_<?= $curSort ?>" title="Сортировать по <?= $sortDirection ?>">Title</a>
           </th>
           <th colspan="2">Actions</th>
         </tr>

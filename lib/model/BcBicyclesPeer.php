@@ -17,6 +17,12 @@
      */
     class BcBicyclesPeer extends BaseBcBicyclesPeer
     {
+        
+        const MESS_EDIT_SUCCESS = "Элемент успешно изменен";
+        const MESS_EDIT_ERROR = "При изменении элемента возникли проблемы";
+        const MESS_NEW_SUCCESS = "Элемент успешно создан";
+        const MESS_NEW_ERROR = "При создании элемента возникли проблемы";
+        
         public static function AddSortCriteria($curSort, &$criteria)
         {
             if ($curSort == "asc")

@@ -43,6 +43,6 @@
 
 <hr />
 
-<a href="<?php echo url_for('bicycles/edit?id='.$BcBicycles->getId()) ?>">Edit</a>
+<a class="btn btn-default" href="<?php echo url_for('bicycles/edit?id='.$BcBicycles->getId()) ?>">Edit</a>
 &nbsp;
-<a href="<?php echo url_for('bicycles/index') ?>">List</a>
+<a class="btn btn-default" href="<?php echo url_for('bicycles/index') ?>">List</a>

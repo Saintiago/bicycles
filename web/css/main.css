@@ -1,0 +1,11 @@
+.sort_title_asc
+{
+    background: url("/images/arr_down.gif") no-repeat scroll right center #fff;
+    padding-right: 30px;
+}
+
+.sort_title_desc
+{
+    background: url("/images/arr_up.gif") no-repeat scroll right center #fff;
+    padding-right: 30px;
+}

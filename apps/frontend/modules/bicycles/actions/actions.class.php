@@ -59,9 +59,13 @@ class bicyclesActions extends sfActions
         $this->forward404Unless($request->isMethod(sfRequest::POST));
 
         $this->form = new BcBicyclesForm();
-
-        $this->processForm($request, $this->form);
-
+        
+        $this->message = array("class" => "danger", "text" => BcBicyclesPeer::MESS_NEW_ERROR);
+        if ($this->processForm($request, $this->form))
+        {
+            $this->message = array("class" => "success", "text" => BcBicyclesPeer::MESS_NEW_SUCCESS);
+        }
+        
         $this->setTemplate('new');
     }
 
@@ -77,8 +81,12 @@ class bicyclesActions extends sfActions
         $this->forward404Unless($BcBicycles = BcBicyclesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object BcBicycles does not exist (%s).', $request->getParameter('id')));
         $this->form = new BcBicyclesForm($BcBicycles);
 
-        $this->processForm($request, $this->form);
-
+        $this->message = array("class" => "danger", "text" => BcBicyclesPeer::MESS_EDIT_ERROR);
+        if ($this->processForm($request, $this->form))
+        {
+            $this->message = array("class" => "success", "text" => BcBicyclesPeer::MESS_EDIT_SUCCESS);
+        }
+        
         $this->setTemplate('edit');
     }
 
@@ -99,8 +107,11 @@ class bicyclesActions extends sfActions
         {
             $BcBicycles = $form->save();
 
-            $this->redirect('bicycles/edit?id=' . $BcBicycles->getId());
+            //$this->redirect('bicycles/edit?id=' . $BcBicycles->getId());
+            
+            return true;
         }
+        return false;
     }
 
 }
